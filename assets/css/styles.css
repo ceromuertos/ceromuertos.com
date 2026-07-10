@@ -151,7 +151,7 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
   text-transform:uppercase;
   box-shadow:0 8px 0 rgba(167,121,52,.22);
 }
-.btn:after{content:"✦";color:var(--gold-soft)}
+.btn:after{content:"âœ¦";color:var(--gold-soft)}
 .btn-outline{
   background:rgba(255,255,255,.20);
   color:var(--black);
@@ -217,7 +217,7 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
   position:relative;
 }
 .divider:after{
-  content:"✦";
+  content:"âœ¦";
   color:var(--gold);
   position:absolute;
   left:50%;
@@ -500,7 +500,7 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
 }
 
 .product-card li:before{
-  content:"✦";
+  content:"âœ¦";
   color:var(--gold);
   margin-right:8px;
 }
@@ -655,85 +655,250 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
 }
 
 @media (max-width:1080px){
-  .nav{display:none}
-  .header-inner{min-height:76px}
-  .brand img{width:96px}
-  .header-actions{margin-left:auto}
-  .hero-inner{grid-template-columns:1fr}
-  .hero-copy{text-align:center;margin:0 auto}
-  .hero-emblem{margin-left:auto;margin-right:auto}
-  .divider{margin-left:auto;margin-right:auto}
-  .hero-actions{justify-content:center}
-  .hero-visual{display:none}
-  .story-grid{grid-template-columns:1fr}
-  .story-copy{padding:0;max-width:100%}
-.ok-door{
-  min-height:0;
-  aspect-ratio:16/10;
-  border:1px solid var(--line-soft);
-  background-color:var(--paper-light);
-  background-image:url("../icons/Iconos Botones-06.png");
-  background-position:center;
-  background-repeat:no-repeat;
-  background-size:auto 90%;
-  position:relative;
-  overflow:hidden;
+  .nav{
+    display:none;
+  }
+
+  .header-inner{
+    min-height:76px;
+  }
+
+  .brand img{
+    width:96px;
+  }
+
+  .header-actions{
+    margin-left:auto;
+  }
+
+  .hero-inner{
+    grid-template-columns:1fr;
+  }
+
+  .hero-copy{
+    text-align:center;
+    margin:0 auto;
+  }
+
+  .hero-emblem{
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .divider{
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .hero-actions{
+    justify-content:center;
+  }
+
+  .hero-visual{
+    display:none;
+  }
+
+  .story-grid{
+    grid-template-columns:1fr;
+  }
+
+  .story-copy{
+    padding:0;
+    max-width:100%;
+  }
+
+  .ok-door{
+    min-height:0;
+    aspect-ratio:16/10;
+    border:1px solid var(--line-soft);
+    background-color:var(--paper-light);
+    background-image:url("../icons/Iconos Botones-06.png");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:auto 90%;
+    position:relative;
+    overflow:hidden;
+  }
+
   .values-strip,
-.products,
-.instagram-grid{
-  grid-template-columns:1fr;
+  .products,
+  .instagram-grid{
+    grid-template-columns:1fr;
+  }
+
+  .origin,
+  .guardian-section{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+
+  .origin .coin-img,
+  .guardian-section .coin-img{
+    margin:auto;
+  }
+
+  .sketch-agave,
+  .lantern{
+    display:none;
+  }
+
+  .footer-inner{
+    grid-template-columns:1fr;
+  }
 }
-}
+
 @media (max-width:640px){
-  .site-wrap,.header-inner,.footer-inner,.hero-inner{width:min(100% - 24px,1180px)}
-  .header-cta{display:none}
-  .hero{min-height:auto;padding:54px 0 56px}
-  .hero h1{font-size:clamp(1.85rem,9.6vw,2.7rem);letter-spacing:.035em}
-  .hero-text{font-size:.84rem}
-  .hero-emblem{width:min(270px,78vw)}
-  .hero-actions,.age-actions{flex-direction:column;align-items:stretch}
+  html,
+  body{
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden;
+  }
+
+  .site-wrap,
+  .header-inner,
+  .footer-inner,
+  .hero-inner{
+    width:calc(100% - 28px);
+    max-width:100%;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .story-grid,
+  .values-strip,
+  .products,
+  .instagram-grid,
+  .origin,
+  .guardian-section,
+  .footer-inner{
+    width:100%;
+    max-width:100%;
+    grid-template-columns:1fr !important;
+  }
+
+  .frame,
+  .product-card,
+  .instagram-card,
+  .values-strip{
+    width:100%;
+    max-width:100%;
+  }
+
+  .header-cta{
+    display:none;
+  }
+
+  .language-link{
+    min-height:40px;
+    padding:9px 12px;
+    font-size:.68rem;
+  }
+
+  .hero{
+    min-height:auto;
+    padding:54px 0 56px;
+  }
+
+  .hero h1{
+    font-size:clamp(1.85rem,9.6vw,2.7rem);
+    letter-spacing:.035em;
+  }
+
+  .hero-text{
+    font-size:.84rem;
+  }
+
+  .hero-emblem{
+    width:min(270px,78vw);
+  }
+
+  .hero-actions,
+  .age-actions{
+    flex-direction:column;
+    align-items:stretch;
+  }
+
+  .story-grid{
+    padding:16px;
+  }
+
+  .story-uppercase{
+    text-align:left;
+    text-align-last:left;
+    letter-spacing:.04em;
+  }
+
+  .values-strip > div{
+    width:100%;
+    max-width:100%;
+    border-right:0;
+    border-bottom:1px solid var(--line);
+  }
+
+  .values-strip > div:last-child{
+    border-bottom:0;
+  }
+
+  .value-photo-right{
+    display:none;
+  }
+
+  .products{
+    gap:22px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
   .product-card{
-  min-height:auto;
-  grid-template-rows:360px auto;
-  padding:22px 18px 28px;
-}
+    width:100%;
+    min-width:0;
+    min-height:auto;
+    grid-template-rows:350px auto;
+    padding:22px 18px 28px;
+    overflow:hidden;
+  }
 
-.product-card picture{
-  height:360px;
-}
+  .product-card picture{
+    width:100%;
+    min-width:0;
+    height:350px;
+  }
 
-.product-card img{
-  height:335px;
-  max-width:92%;
-}
+  .product-card img{
+    height:325px;
+    max-width:88%;
+  }
 
-.product-card:nth-child(1) img{
-  height:340px;
-}
+  .product-card:nth-child(1) img{
+    height:330px;
+  }
 
-.product-card:nth-child(2) img{
-  height:350px;
-}
+  .product-card:nth-child(2) img{
+    height:340px;
+  }
 
-.product-card:nth-child(3) img{
-  height:340px;
-}
+  .product-card:nth-child(3) img{
+    height:330px;
+  }
 
-.product-card h3{
-  min-height:auto;
-  margin-top:2px;
-  margin-bottom:14px;
-  font-size:clamp(1.65rem,8vw,2.35rem);
-}
+  .product-card h3{
+    min-height:auto;
+    margin-top:2px;
+    margin-bottom:14px;
+    font-size:clamp(1.65rem,8vw,2.35rem);
+  }
 
-.product-card p{
-  min-height:auto;
-  max-width:280px;
-}
+  .product-card p{
+    min-height:auto;
+    max-width:280px;
+  }
 
-.product-card ul{
-  max-width:260p
-  .values-strip>div{border-right:0;border-bottom:1px solid var(--line)}
-  .values-strip>div:last-child{border-bottom:0}
-  .privacy-card{padding:28px 20px}
+  .product-card ul{
+    max-width:260px;
+  }
+
+  .privacy-card{
+    padding:28px 20px;
+  }
 }
