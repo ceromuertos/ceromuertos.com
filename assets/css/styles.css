@@ -290,12 +290,13 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
   padding:22px;
 }
 .ok-door{
-  min-height:330px;
+  min-height:360px;
   border:1px solid var(--line-soft);
-  background:
-    radial-gradient(circle at center, rgba(251,246,234,.78), rgba(244,236,217,.58) 52%, rgba(244,236,217,.86) 100%),
-    url("../icons/Iconos Botones-06.webp") center/contain no-repeat;
-  background-size:cover, min(330px, 82%) auto;
+  background-color:var(--paper-light);
+  background-image:url("../icons/Iconos Botones-06.png");
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:auto 94%;
   position:relative;
   overflow:hidden;
 }
