@@ -151,7 +151,7 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
   text-transform:uppercase;
   box-shadow:0 8px 0 rgba(167,121,52,.22);
 }
-.btn:after{content:"âœ¦";color:var(--gold-soft)}
+.btn:after{content:"\2726";color:var(--gold-soft)}
 .btn-outline{
   background:rgba(255,255,255,.20);
   color:var(--black);
@@ -182,13 +182,7 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
   background:url("../img/wallpaper.webp") center center/cover no-repeat;
 }
 .hero:after{
-  content:"";
-  position:absolute;
-  inset:0;
-  z-index:-2;
-  background:
-    linear-gradient(90deg,rgba(244,236,217,.86) 0%,rgba(244,236,217,.58) 34%,rgba(244,236,217,.22) 66%,rgba(244,236,217,.10) 100%),
-    linear-gradient(180deg,rgba(255,255,255,.10),rgba(255,255,255,.18));
+  content:none;
 }
 .hero-inner{
   width:min(1180px,calc(100% - 36px));
@@ -205,7 +199,7 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
   text-align:left;
 }
 .hero-emblem{
-  width:min(340px,78vw);
+  width:min(680px,88vw);
   margin:0 0 20px;
   filter:drop-shadow(0 16px 30px rgba(21,16,9,.18));
 }
@@ -217,7 +211,7 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
   position:relative;
 }
 .divider:after{
-  content:"âœ¦";
+  content:"\2726";
   color:var(--gold);
   position:absolute;
   left:50%;
@@ -233,7 +227,7 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
   color:var(--black);
   letter-spacing:.055em;
   text-transform:uppercase;
-  text-shadow:0 2px 14px rgba(255,255,255,.38);
+  text-shadow:0 2px 16px rgba(255,255,255,.62);
 }
 .hero-slogan span{
   display:block;
@@ -248,7 +242,7 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
   text-transform:uppercase;
   color:var(--black);
   font-weight:700;
-  text-shadow:0 2px 14px rgba(255,255,255,.45);
+  text-shadow:0 2px 14px rgba(255,255,255,.68);
 }
 .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
 .hero-visual{min-height:420px}
@@ -500,7 +494,7 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
 }
 
 .product-card li:before{
-  content:"âœ¦";
+  content:"\2726";
   color:var(--gold);
   margin-right:8px;
 }
@@ -671,6 +665,11 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
     margin-left:auto;
   }
 
+  .hero{
+    min-height:auto;
+    padding:64px 0 72px;
+  }
+
   .hero-inner{
     grid-template-columns:1fr;
   }
@@ -797,20 +796,29 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
 
   .hero{
     min-height:auto;
-    padding:54px 0 56px;
+    padding:46px 0 56px;
   }
 
   .hero h1{
-    font-size:clamp(1.85rem,9.6vw,2.7rem);
+    font-size:clamp(1.65rem,8.2vw,2.45rem);
     letter-spacing:.035em;
+    text-shadow:0 2px 16px rgba(255,255,255,.72);
+  }
+
+  .hero-slogan span{
+    white-space:nowrap;
   }
 
   .hero-text{
-    font-size:.84rem;
+    font-size:.80rem;
+    max-width:330px;
+    margin-left:auto;
+    margin-right:auto;
+    text-shadow:0 2px 14px rgba(255,255,255,.78);
   }
 
   .hero-emblem{
-    width:min(270px,78vw);
+    width:min(500px,88vw);
   }
 
   .hero-actions,
