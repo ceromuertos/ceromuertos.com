@@ -145,11 +145,14 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
   min-height:46px;
   padding:12px 22px;
   border:1px solid var(--gold);
-  background:var(--ink);
+  background:var(--agave-blue);
   color:#fff8e8;
   font-size:.82rem;
   text-transform:uppercase;
   box-shadow:0 8px 0 rgba(167,121,52,.22);
+}
+.btn:hover{
+  background:var(--agave-blue-dark);
 }
 .btn:after{content:"\2726";color:var(--gold-soft)}
 .btn-outline{
