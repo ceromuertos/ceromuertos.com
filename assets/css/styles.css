@@ -452,8 +452,7 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
 /* Tequila como producto principal */
 .product-card:nth-child(1){
   border:2px solid var(--gold);
-  background:
-    linear-gradient(180deg,rgba(255,250,238,.96),rgba(244,236,217,.82));
+  background:#ffffff;
   box-shadow:0 26px 58px rgba(64,40,12,.18);
   transform:translateY(-10px);
 }
