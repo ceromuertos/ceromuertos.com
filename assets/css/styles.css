@@ -950,10 +950,13 @@ html[lang="en"] .product-card:nth-child(1):after{
   .product-card:nth-child(1){
     transform:none;
     margin-top:16px;
+    padding-top:52px;
+    overflow:hidden;
   }
 
   .product-card:nth-child(1):after{
-    top:-14px;
+    top:12px;
+    transform:translateX(-50%);
   }
 
   .product-card picture{
