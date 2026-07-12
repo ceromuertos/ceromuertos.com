@@ -449,6 +449,45 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
   pointer-events:none;
 }
 
+/* Tequila como producto principal */
+.product-card:nth-child(1){
+  border:2px solid var(--gold);
+  background:
+    linear-gradient(180deg,rgba(255,250,238,.96),rgba(244,236,217,.82));
+  box-shadow:0 26px 58px rgba(64,40,12,.18);
+  transform:translateY(-10px);
+}
+
+.product-card:nth-child(1):before{
+  border-color:rgba(167,121,52,.55);
+}
+
+.product-card:nth-child(1):after{
+  position:absolute;
+  top:-15px;
+  left:50%;
+  transform:translateX(-50%);
+  z-index:4;
+  padding:7px 14px;
+  border:1px solid var(--gold);
+  background:var(--ink);
+  color:#fff8e8;
+  font-family:var(--serif);
+  font-size:.68rem;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+  white-space:nowrap;
+  box-shadow:0 8px 18px rgba(31,22,10,.16);
+}
+
+html[lang="es-MX"] .product-card:nth-child(1):after{
+  content:"Producto principal";
+}
+
+html[lang="en"] .product-card:nth-child(1):after{
+  content:"Signature product";
+}
+
 .product-card picture{
   position:relative;
   z-index:2;
@@ -470,7 +509,7 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
 
 /* Ajuste fino por producto para que visualmente queden parejos */
 .product-card:nth-child(1) img{
-  height:370px;
+  height:388px;
 }
 
 .product-card:nth-child(2) img{
@@ -478,7 +517,7 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
 }
 
 .product-card:nth-child(3) img{
-  height:370px;
+  height:385px;
 }
 
 .product-card-content{
@@ -846,12 +885,36 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
     align-items:stretch;
   }
 
-  .story-grid{padding:16px}
+  .story-grid{
+    padding:16px;
+  }
 
+  .story-copy{
+    width:100%;
+    max-width:100%;
+    margin:0 auto;
+    padding:0;
+    text-align:center;
+  }
+
+  .story-copy h2,
+  .story-copy > .eyebrow,
+  .story-copy p,
+  .story-uppercase,
+  .zero-line{
+    text-align:center !important;
+    text-align-last:center !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+  }
+
+  .story-copy p,
   .story-uppercase{
-    text-align:left;
-    text-align-last:left;
-    letter-spacing:.04em;
+    max-width:36ch;
+    hyphens:none;
+    word-spacing:normal;
+    letter-spacing:.038em;
+    line-height:1.66;
   }
 
   .values-strip > div{
@@ -884,6 +947,15 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
     overflow:hidden;
   }
 
+  .product-card:nth-child(1){
+    transform:none;
+    margin-top:16px;
+  }
+
+  .product-card:nth-child(1):after{
+    top:-14px;
+  }
+
   .product-card picture{
     width:100%;
     min-width:0;
@@ -895,9 +967,9 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
     max-width:88%;
   }
 
-  .product-card:nth-child(1) img{height:330px}
+  .product-card:nth-child(1) img{height:346px}
   .product-card:nth-child(2) img{height:340px}
-  .product-card:nth-child(3) img{height:330px}
+  .product-card:nth-child(3) img{height:340px}
 
   .product-card h3{
     min-height:auto;
