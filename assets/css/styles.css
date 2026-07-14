@@ -18,8 +18,15 @@
   --serif:"Trajan Pro","Trajan Pro 3","Cinzel","Times New Roman",serif;
   --body:"Libre Baskerville",Georgia,serif;
 }
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
 body{
   margin:0;
   color:var(--ink);
@@ -30,6 +37,7 @@ body{
   font-family:var(--body);
   overflow-x:hidden;
 }
+
 body:before{
   content:"";
   position:fixed;
@@ -42,17 +50,43 @@ body:before{
     linear-gradient(90deg,rgba(126,88,38,.04) 1px, transparent 1px);
   background-size:26px 26px;
 }
-img{display:block;max-width:100%;height:auto}
-a{color:inherit;text-decoration:none}
-p{line-height:1.7}
-h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
+
+img{
+  display:block;
+  max-width:100%;
+  height:auto;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+p{
+  line-height:1.7;
+}
+
+h1,
+h2,
+h3,
+.btn,
+.nav a,
+.eyebrow,
+.section-label,
+.coin-title,
+.language-link{
   font-family:var(--serif);
   font-weight:700;
   letter-spacing:.08em;
 }
-.site-wrap{width:min(1180px,calc(100% - 36px));margin:0 auto}
+
+.site-wrap{
+  width:min(1180px,calc(100% - 36px));
+  margin:0 auto;
+}
 
 /* Age gate */
+
 .age-gate{
   position:fixed;
   inset:0;
@@ -65,16 +99,25 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
     radial-gradient(circle at center, rgba(199,155,84,.18), transparent 34rem);
   backdrop-filter:blur(10px);
 }
-.age-gate.is-hidden{display:none}
+
+.age-gate.is-hidden{
+  display:none;
+}
+
 .age-card{
   width:min(520px,100%);
   text-align:center;
   padding:34px 30px 30px;
-  background:linear-gradient(180deg,rgba(251,246,234,.98),rgba(239,226,197,.98));
+  background:linear-gradient(
+    180deg,
+    rgba(251,246,234,.98),
+    rgba(239,226,197,.98)
+  );
   border:1px solid var(--line);
   box-shadow:var(--shadow);
   position:relative;
 }
+
 .age-card:before{
   content:"";
   position:absolute;
@@ -82,12 +125,33 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
   pointer-events:none;
   border:1px solid rgba(167,121,52,.34);
 }
-.age-logo{width:132px;margin:0 auto 12px}
-.age-card h1{font-size:clamp(1.8rem,5vw,2.45rem);margin:8px 0 12px}
-.age-card p{color:var(--muted);margin:8px auto;max-width:410px}
-.age-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:22px}
+
+.age-logo{
+  width:132px;
+  margin:0 auto 12px;
+}
+
+.age-card h1{
+  font-size:clamp(1.8rem,5vw,2.45rem);
+  margin:8px 0 12px;
+}
+
+.age-card p{
+  color:var(--muted);
+  margin:8px auto;
+  max-width:410px;
+}
+
+.age-actions{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:22px;
+}
 
 /* Header */
+
 .site-header{
   position:sticky;
   top:0;
@@ -96,6 +160,7 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
   backdrop-filter:blur(12px);
   border-bottom:1px solid var(--line-soft);
 }
+
 .header-inner{
   width:min(1180px,calc(100% - 36px));
   margin:0 auto;
@@ -104,7 +169,11 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
   align-items:center;
   gap:22px;
 }
-.brand img{width:128px}
+
+.brand img{
+  width:128px;
+}
+
 .nav{
   flex:1;
   display:flex;
@@ -113,15 +182,28 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
   align-items:center;
   font-size:.76rem;
 }
+
 .nav a{
   padding:8px 0;
   color:var(--ink);
   border-bottom:1px solid transparent;
   white-space:nowrap;
 }
-.nav a:hover{border-bottom-color:var(--gold)}
-.header-actions{display:flex;align-items:center;gap:10px}
-.header-cta{white-space:nowrap}
+
+.nav a:hover{
+  border-bottom-color:var(--gold);
+}
+
+.header-actions{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.header-cta{
+  white-space:nowrap;
+}
+
 .language-link{
   display:inline-flex;
   align-items:center;
@@ -134,9 +216,13 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
   text-transform:uppercase;
   font-size:.72rem;
 }
-.flag{font-size:1rem}
+
+.flag{
+  font-size:1rem;
+}
 
 /* Buttons */
+
 .btn{
   display:inline-flex;
   align-items:center;
@@ -155,7 +241,12 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
 .btn:not(.btn-outline):not(.btn-gold):hover{
   background:var(--agave-blue-dark);
 }
-.btn:after{content:"\2726";color:var(--gold-soft)}
+
+.btn:after{
+  content:"\2726";
+  color:var(--gold-soft);
+}
+
 .btn-outline{
   background:rgba(244,236,217,.72);
   color:var(--black);
@@ -163,13 +254,18 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
   border-color:rgba(16,40,59,.52);
   backdrop-filter:blur(3px);
 }
-.btn-outline:after{content:""}
+
+.btn-outline:after{
+  content:"";
+}
+
 .btn-gold{
   background:linear-gradient(180deg,#b8873e,#8d602a);
   color:#fff6df;
 }
 
 /* Hero full color photo */
+
 .hero{
   min-height:calc(100vh - 88px);
   width:100%;
@@ -179,6 +275,7 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
   padding:46px 0 78px;
   overflow:hidden;
 }
+
 .hero:before{
   content:"";
   position:absolute;
@@ -186,9 +283,11 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
   z-index:-3;
   background:url("../img/wallpaper.webp") center center/cover no-repeat;
 }
+
 .hero:after{
   content:none;
 }
+
 .hero-inner{
   width:min(1180px,calc(100% - 36px));
   margin:0 auto;
@@ -198,6 +297,7 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
   justify-items:center;
   gap:0;
 }
+
 .hero-copy{
   position:relative;
   z-index:2;
@@ -210,11 +310,13 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
   text-align:center;
   margin:0 auto;
 }
+
 .hero-emblem{
   width:min(540px,46vw);
   margin:0 auto 18px;
   filter:drop-shadow(0 16px 30px rgba(21,16,9,.18));
 }
+
 .divider{
   width:min(500px,68%);
   height:1px;
@@ -222,6 +324,7 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
   margin:0 auto 20px;
   position:relative;
 }
+
 .divider:after{
   content:"\2726";
   color:var(--gold);
@@ -232,6 +335,7 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
   background:transparent;
   padding:0;
 }
+
 .hero h1{
   width:100%;
   max-width:880px;
@@ -244,11 +348,13 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
   text-align:center;
   text-shadow:0 2px 16px rgba(255,255,255,.62);
 }
+
 .hero-slogan span{
   display:block;
   white-space:nowrap;
   text-align:center;
 }
+
 .hero-text{
   max-width:760px;
   margin:18px auto 22px;
@@ -261,21 +367,30 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
   font-weight:700;
   text-shadow:0 2px 14px rgba(255,255,255,.76);
 }
+
 .hero-actions{
   display:flex;
   gap:14px;
   flex-wrap:wrap;
   justify-content:center;
 }
-.hero-visual{display:none}
+
+.hero-visual{
+  display:none;
+}
 
 /* General sections */
-.section{padding:34px 0}
+
+.section{
+  padding:34px 0;
+}
+
 .frame{
   position:relative;
   border:1px solid var(--line);
   background:rgba(251,246,234,.76);
 }
+
 .frame:before{
   content:"";
   position:absolute;
@@ -283,6 +398,7 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
   border:1px solid rgba(167,121,52,.28);
   pointer-events:none;
 }
+
 .section-title{
   margin:0 auto 22px;
   text-align:center;
@@ -290,6 +406,7 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
   line-height:1.08;
   text-transform:uppercase;
 }
+
 .eyebrow{
   color:var(--bronze);
   text-transform:uppercase;
@@ -298,6 +415,7 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
 }
 
 /* Story */
+
 .story-grid{
   display:grid;
   grid-template-columns:.9fr 1.1fr;
@@ -305,6 +423,7 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
   align-items:stretch;
   padding:22px;
 }
+
 .ok-door{
   min-height:360px;
   border:1px solid var(--line-soft);
@@ -316,13 +435,18 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
   position:relative;
   overflow:hidden;
 }
-.ok-door:after{content:none}
+
+.ok-door:after{
+  content:none;
+}
+
 .story-copy{
   padding:10px 24px 10px 0;
   max-width:720px;
   justify-self:center;
   text-align:left;
 }
+
 .story-copy h2{
   text-align:center;
   margin:0 0 18px;
@@ -336,18 +460,21 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
   margin-left:auto;
   margin-right:auto;
 }
+
 .story-copy p{
   font-size:.96rem;
   margin:0 auto 12px;
   color:#2c2b22;
   max-width:680px;
 }
+
 .story-uppercase{
   text-transform:uppercase;
   letter-spacing:.05em;
   text-align:justify;
   text-align-last:left;
 }
+
 .zero-line{
   text-align:center !important;
   text-align-last:center !important;
@@ -361,10 +488,19 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
   width:100%;
   text-transform:none;
 }
-.zero-line span{display:block}
-.cero-muertos{text-transform:uppercase;margin-top:10px;font-size:1.35rem}
+
+.zero-line span{
+  display:block;
+}
+
+.cero-muertos{
+  text-transform:uppercase;
+  margin-top:10px;
+  font-size:1.35rem;
+}
 
 /* Values */
+
 .values-strip{
   display:grid;
   grid-template-columns:1fr 1fr 1fr;
@@ -372,6 +508,7 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
   margin-top:16px;
   border:1px solid var(--line);
 }
+
 .values-strip > div{
   min-height:190px;
   padding:22px;
@@ -381,15 +518,21 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
   border-right:1px solid var(--line);
   background:rgba(251,246,234,.55);
 }
-.values-strip > div:last-child{border-right:0}
+
+.values-strip > div:last-child{
+  border-right:0;
+}
+
 .value-photo-left{
   background:
     linear-gradient(rgba(16,40,59,.08),rgba(16,40,59,.10)),
     url("../img/hecho-en-mexico-nueva.webp") center/cover no-repeat !important;
 }
+
 .value-photo-right{
   background:url("../img/celebracion-chicos.png") center center/cover no-repeat !important;
 }
+
 .value-seal{
   width:138px;
   height:138px;
@@ -405,12 +548,19 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
   letter-spacing:.08em;
   font-size:.86rem;
 }
+
 .values-strip h2{
   margin:0 0 12px;
   line-height:1;
   font-size:clamp(1.45rem,2.4vw,2.25rem);
 }
-.values-strip p{margin:0 auto;max-width:340px;font-size:.95rem}
+
+.values-strip p{
+  margin:0 auto;
+  max-width:340px;
+  font-size:.95rem;
+}
+
 .values-strip strong{
   display:block;
   margin-top:12px;
@@ -421,6 +571,7 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
 }
 
 /* Portfolio */
+
 .portfolio{
   padding-top:36px;
 }
@@ -454,9 +605,9 @@ h1,h2,h3,.btn,.nav a,.eyebrow,.section-label,.coin-title,.language-link{
 }
 
 /* Tequila como producto principal */
+
 .product-card:nth-child(1){
-background:var(--paper-light);
- background:#fbf6ea;
+  background:#fbf6ea;
   box-shadow:0 26px 58px rgba(64,40,12,.18);
   transform:translateY(-10px);
   grid-template-rows:auto 390px auto;
@@ -487,8 +638,10 @@ background:var(--paper-light);
   border-color:rgba(167,121,52,.55);
 }
 
-
-
+/*
+  El tamaño de los recuadros permanece intacto.
+  Solo cambia el tamaño visual de las botellas.
+*/
 
 .product-card picture{
   position:relative;
@@ -498,25 +651,43 @@ background:var(--paper-light);
   display:flex;
   align-items:flex-end;
   justify-content:center;
+  overflow:visible;
 }
 
 .product-card img{
   width:auto;
-  height:365px;
+  height:315px;
   max-width:92%;
   object-fit:contain;
+  object-position:center bottom;
   margin:0 auto;
   filter:drop-shadow(0 20px 26px rgba(40,20,6,.18));
+  transform-origin:center bottom;
 }
 
-/* Jerarquía visual de productos — escritorio */
+/* Tequila claramente más grande */
+
 .product-card:nth-child(1) img{
-  height:430px; /* Tequila más grande */
+  height:385px;
+  transform:none;
 }
 
-.product-card:nth-child(2) img,
+/* Dragon Wine */
+
+.product-card:nth-child(2) img{
+  height:315px;
+  transform:none;
+}
+
+/*
+  Free Spirit tiene la misma altura base que Dragon.
+  La escala compensa el espacio transparente interno del PNG,
+  para que ambas botellas se perciban del mismo tamaño.
+*/
+
 .product-card:nth-child(3) img{
-  height:330px; /* Ambos vinos exactamente iguales */
+  height:315px;
+  transform:scale(1.06);
 }
 
 .product-card-content{
@@ -577,6 +748,7 @@ background:var(--paper-light);
 }
 
 /* Origin */
+
 .origin{
   display:grid;
   grid-template-columns:220px 1fr 300px;
@@ -585,16 +757,26 @@ background:var(--paper-light);
   padding:26px;
   margin-top:28px;
 }
+
 .origin .coin-img{
   width:190px;
   filter:drop-shadow(0 20px 28px rgba(26,16,8,.23));
 }
-.origin h2,.guardian-section h2{
+
+.origin h2,
+.guardian-section h2{
   margin:0 0 16px;
   font-size:clamp(1.35rem,2.2vw,2.05rem);
   text-transform:uppercase;
 }
-.origin p,.guardian-section p{font-size:.98rem;color:#2b271f;margin:0 0 12px}
+
+.origin p,
+.guardian-section p{
+  font-size:.98rem;
+  color:#2b271f;
+  margin:0 0 12px;
+}
+
 .sketch-agave{
   min-height:230px;
   opacity:1;
@@ -604,6 +786,7 @@ background:var(--paper-light);
 }
 
 /* Guardian */
+
 .guardian-band{
   margin-top:28px;
   background:
@@ -613,6 +796,7 @@ background:var(--paper-light);
   border-top:1px solid var(--gold);
   border-bottom:1px solid var(--gold);
 }
+
 .guardian-section{
   display:grid;
   grid-template-columns:190px 1fr 280px;
@@ -620,18 +804,27 @@ background:var(--paper-light);
   align-items:center;
   padding:26px 0;
 }
+
 .guardian-section .coin-img{
   width:190px;
   filter:drop-shadow(0 16px 26px rgba(0,0,0,.45));
 }
-.guardian-section h2{color:#d8ad65}
-.guardian-section p{color:#f3e6c9}
+
+.guardian-section h2{
+  color:#d8ad65;
+}
+
+.guardian-section p{
+  color:#f3e6c9;
+}
+
 .guardian-section strong{
   color:#d7a65b;
   font-family:var(--serif);
   text-transform:uppercase;
   letter-spacing:.06em;
 }
+
 .lantern{
   min-height:200px;
   border-left:1px solid rgba(199,155,84,.45);
@@ -643,26 +836,43 @@ background:var(--paper-light);
 }
 
 /* Instagram and Footer */
-.instagram{padding:34px 0}
+
+.instagram{
+  padding:34px 0;
+}
+
 .instagram-grid{
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:26px;
   align-items:center;
 }
+
 .instagram-card{
   padding:24px;
   border:1px solid var(--line);
   background:rgba(251,246,234,.62);
   text-align:center;
 }
-.instagram-card h2{margin:0 0 8px;font-size:clamp(1.55rem,2.6vw,2.25rem)}
-.handle{font-family:var(--serif);font-size:1.55rem;letter-spacing:.035em;margin:10px 0 18px}
+
+.instagram-card h2{
+  margin:0 0 8px;
+  font-size:clamp(1.55rem,2.6vw,2.25rem);
+}
+
+.handle{
+  font-family:var(--serif);
+  font-size:1.55rem;
+  letter-spacing:.035em;
+  margin:10px 0 18px;
+}
+
 .site-footer{
   background:#1f536c;
   color:#f5e7c5;
   border-top:2px solid var(--gold);
 }
+
 .footer-inner{
   width:min(1180px,calc(100% - 36px));
   margin:0 auto;
@@ -672,7 +882,12 @@ background:var(--paper-light);
   padding:32px 0;
   align-items:center;
 }
-.footer-logo{width:140px;margin:auto}
+
+.footer-logo{
+  width:140px;
+  margin:auto;
+}
+
 .footer-block{
   min-height:108px;
   border-left:1px solid rgba(199,155,84,.52);
@@ -681,31 +896,61 @@ background:var(--paper-light);
   text-align:center;
   background:rgba(16,40,59,.16);
 }
+
 .footer-block h3{
   margin:0 0 10px;
   color:#d9ae67;
   font-size:1.05rem;
   text-transform:uppercase;
 }
-.footer-block p,.footer-block a{font-size:.84rem;color:#f5e7c5}
-.footer-links{display:flex;flex-direction:column;gap:8px}
-.footer-links a:hover{color:#d9ae67}
+
+.footer-block p,
+.footer-block a{
+  font-size:.84rem;
+  color:#f5e7c5;
+}
+
+.footer-links{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+
+.footer-links a:hover{
+  color:#d9ae67;
+}
 
 /* Privacy */
+
 .privacy-page{
   width:min(940px,calc(100% - 36px));
   margin:0 auto;
   padding:42px 0 70px;
 }
+
 .privacy-card{
   border:1px solid var(--line);
   background:rgba(251,246,234,.80);
   padding:42px;
   position:relative;
 }
-.privacy-card h1{font-size:clamp(2rem,5vw,3.2rem);margin:0 0 18px}
-.privacy-card h2{font-size:1.25rem;margin:28px 0 8px}
-.privacy-card p,.privacy-card li{color:#2b271f;font-size:.96rem}
+
+.privacy-card h1{
+  font-size:clamp(2rem,5vw,3.2rem);
+  margin:0 0 18px;
+}
+
+.privacy-card h2{
+  font-size:1.25rem;
+  margin:28px 0 8px;
+}
+
+.privacy-card p,
+.privacy-card li{
+  color:#2b271f;
+  font-size:.96rem;
+}
+
 .back-link{
   display:inline-block;
   margin-bottom:22px;
@@ -714,11 +959,25 @@ background:var(--paper-light);
   font-weight:bold;
 }
 
+/* Tablet */
+
 @media (max-width:1080px){
-  .nav{display:none}
-  .header-inner{min-height:76px}
-  .brand img{width:96px}
-  .header-actions{margin-left:auto}
+
+  .nav{
+    display:none;
+  }
+
+  .header-inner{
+    min-height:76px;
+  }
+
+  .brand img{
+    width:96px;
+  }
+
+  .header-actions{
+    margin-left:auto;
+  }
 
   .hero{
     min-height:auto;
@@ -754,8 +1013,14 @@ background:var(--paper-light);
     display:none;
   }
 
-  .story-grid{grid-template-columns:1fr}
-  .story-copy{padding:0;max-width:100%}
+  .story-grid{
+    grid-template-columns:1fr;
+  }
+
+  .story-copy{
+    padding:0;
+    max-width:100%;
+  }
 
   .ok-door{
     min-height:0;
@@ -797,7 +1062,10 @@ background:var(--paper-light);
   }
 }
 
+/* Mobile */
+
 @media (max-width:640px){
+
   html,
   body{
     width:100%;
@@ -965,16 +1233,34 @@ background:var(--paper-light);
     width:100%;
     min-width:0;
     height:350px;
+    overflow:visible;
   }
 
   .product-card img{
-    height:325px;
+    height:280px;
     max-width:88%;
+    object-position:center bottom;
+    transform-origin:center bottom;
   }
 
-  .product-card:nth-child(1) img{height:346px}
-  .product-card:nth-child(2) img{height:340px}
-  .product-card:nth-child(3) img{height:340px}
+  /* Tequila más grande en móvil */
+
+  .product-card:nth-child(1) img{
+    height:340px;
+    transform:none;
+  }
+
+  /* Los dos vinos mantienen la misma altura base */
+
+  .product-card:nth-child(2) img{
+    height:280px;
+    transform:none;
+  }
+
+  .product-card:nth-child(3) img{
+    height:280px;
+    transform:scale(1.06);
+  }
 
   .product-card h3{
     min-height:auto;
