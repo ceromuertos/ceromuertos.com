@@ -511,12 +511,12 @@ background:var(--paper-light);
 
 /* Jerarquía visual de productos — escritorio */
 .product-card:nth-child(1) img{
-  height:410px; /* Tequila más grande */
+  height:430px; /* Tequila más grande */
 }
 
 .product-card:nth-child(2) img,
 .product-card:nth-child(3) img{
-  height:335px; /* Ambos vinos exactamente iguales */
+  height:330px; /* Ambos vinos exactamente iguales */
 }
 
 .product-card-content{
