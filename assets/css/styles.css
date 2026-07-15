@@ -711,7 +711,7 @@ h3,
 /* Tequila claramente más grande */
 
 .product-card:nth-child(1) img{
-  height:575px;
+  height:525px;
   transform:none;
 }
 
