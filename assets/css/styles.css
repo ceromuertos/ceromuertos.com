@@ -711,8 +711,8 @@ h3,
 /* Tequila claramente más grande */
 
 .product-card:nth-child(1) img{
-  height:525px;
-  transform:none;
+  height:550px;
+  transform:translateY(10px);
 }
 
 /* Dragon Wine: vuelve a su posición original */
