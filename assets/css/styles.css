@@ -715,22 +715,16 @@ h3,
   transform:none;
 }
 
-/* Dragon Wine */
-
+/* Dragon Wine: vuelve a su posición original */
 .product-card:nth-child(2) img{
   height:315px;
-  transform:translateY(14px);
+  transform:none;
 }
 
-/*
-  Free Spirit tiene la misma altura base que Dragon.
-  La escala compensa el espacio transparente interno del PNG,
-  para que ambas botellas se perciban del mismo tamaño.
-*/
-
+/* Free Spirit: baja 14px para alinear su base con Dragon */
 .product-card:nth-child(3) img{
   height:315px;
-  transform:scale(1.06);
+  transform:translateY(14px) scale(1.06);
 }
 
 .product-card-content{
