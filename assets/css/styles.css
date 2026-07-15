@@ -712,7 +712,7 @@ h3,
 
 .product-card:nth-child(1) img{
   height:550px;
-  transform:translateY(10px);
+  transform:translateY(25px);
 }
 
 /* Dragon Wine: vuelve a su posición original */
