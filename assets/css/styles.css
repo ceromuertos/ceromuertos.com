@@ -1411,9 +1411,9 @@ h3,
   /* Tequila más grande en móvil */
 
   .product-card:nth-child(1) img{
-    height:340px;
-    transform:none;
-  }
+  height:374px;              /* 340px + 10% */
+  transform:translateY(15px); /* Baja ligeramente la botella */
+}
 
   /* Los dos vinos mantienen la misma altura base */
 
