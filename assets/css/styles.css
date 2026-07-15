@@ -687,9 +687,9 @@ h3,
   manteniendo intacto el tamaño actual de ambas botellas.
 */
 .product-card:nth-child(2),
-.product-card:nth-child(3){
-  width:100%;
-  justify-self:stretch;
+.product-card:nth-child(3) img{
+  height:315px;
+  transform:translateY(14px) scale(1.06);
 }
 
 .product-card picture{
