@@ -30,32 +30,9 @@ html{
 body{
   margin:0;
   color:var(--ink);
-    background:
-    linear-gradient(
-      to right,
-      #f4ecd9 0%,
-      #f4ecd9 32%,
-      #f0e3c9 62%,
-      #e7d3ae 82%,
-      #d9bd8d 100%
-    );
-    radial-gradient(
-      ellipse at 88% 38%,
-      rgba(167,121,52,.20) 0%,
-      rgba(167,121,52,.10) 30%,
-      transparent 56%
-    ),
-    radial-gradient(
-      ellipse at 42% 86%,
-      rgba(110,72,31,.15) 0%,
-      transparent 52%
-    ),
-    linear-gradient(
-      145deg,
-      #fbf6ea 0%,
-      #f4ecd9 52%,
-      #ead8b5 100%
-    );
+  position:relative;
+  z-index:0;
+  background:transparent;
   font-family:var(--body);
   overflow-x:hidden;
 }
@@ -65,12 +42,12 @@ body:before{
   position:fixed;
   inset:0;
   z-index:-1;
-  opacity:.22;
   pointer-events:none;
-  background-image:
-    linear-gradient(rgba(126,88,38,.06) 1px, transparent 1px),
-    linear-gradient(90deg,rgba(126,88,38,.04) 1px, transparent 1px);
-  background-size:26px 26px;
+  background-color:var(--paper);
+  background-image:url("../img/papel-vino.webp");
+  background-position:center center;
+  background-size:cover;
+  background-repeat:no-repeat;
 }
 
 img{
