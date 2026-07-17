@@ -801,7 +801,7 @@ h3,
     del ancho de la columna del tequila.
   */
   .products{
-    grid-template-columns:1fr .7fr .7fr;
+    grid-template-columns:.8fr .5fr .5fr;
     align-items:center;
   }
 
