@@ -1407,7 +1407,7 @@ h3,
   }
 
   .product-card{
-    width:100%;
+    width:70%;
     min-width:0;
     min-height:auto;
     grid-template-rows:350px auto;
